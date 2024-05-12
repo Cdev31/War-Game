@@ -33,7 +33,7 @@ public class JhonMovement : MonoBehaviour
         
         else Grounded = false;
 
-        if( Input.GetKeyDown(KeyCode.W) && Grounded){
+        if( Input.GetKeyDown(KeyCode.UpArrow) && Grounded){
             Jump();
         }
         if( Input.GetKeyDown(KeyCode.Space) && Time.time > LastShoot + 0.25f){
@@ -53,7 +53,7 @@ public class JhonMovement : MonoBehaviour
     }
 
     private void Jump(){
-       RigidBody2D.velocity = Vector2.up * JumpForce ;
+       RigidBody2D.velocity = Vector2.up * JumpForce;
     }
     private void FixedUpdate(){
         RigidBody2D.velocity = new Vector2(Horizontal, RigidBody2D.velocity.y);

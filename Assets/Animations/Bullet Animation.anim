@@ -33,7 +33,7 @@ AnimationClip:
     - time: 0.41666666
       value: {fileID: -890631186, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
     - time: 0.5
-      value: {fileID: 605561638, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
+      value: {fileID: -1439665960, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -62,7 +62,7 @@ AnimationClip:
     - {fileID: 845403993, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
     - {fileID: -1460504908, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
     - {fileID: -890631186, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
-    - {fileID: 605561638, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
+    - {fileID: -1439665960, guid: 18349558a2ffcc0baa942c8efe5f98bc, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -87,4 +87,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.5
+    functionName: DestroyBullet
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 89b677b11d8a4faa594fa6f9857f3ab0, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

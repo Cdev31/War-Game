@@ -12,12 +12,16 @@ public class BulletScript : MonoBehaviour
         RigidBody2D = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
       RigidBody2D.velocity = Direction  * Speed;
     }
 
     public void SetDirection(Vector2 direction){
         Direction = direction;
+    }
+
+    public void DestroyBullet(){
+        Destroy(gameObject);
     }
 }
